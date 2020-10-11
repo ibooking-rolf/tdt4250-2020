@@ -64,7 +64,7 @@ The Eclipse PlantUML plugin is incompatible with the latest graphviz version, so
 
 ### Model - Assignment 2
 
-![Model]()
+![Model](https://raw.githubusercontent.com/reaas/tdt4250-2020/master/assignment2-image.png)
 
 
 ### Folder structure - Assingment 1
