@@ -1,0 +1,94 @@
+/**
+ */
+package tdt4250;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Specialization</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link tdt4250.Specialization#getName <em>Name</em>}</li>
+ *   <li>{@link tdt4250.Specialization#getProgramme <em>Programme</em>}</li>
+ *   <li>{@link tdt4250.Specialization#getSelectableIn <em>Selectable In</em>}</li>
+ * </ul>
+ *
+ * @see tdt4250.Tdt4250Package#getSpecialization()
+ * @model
+ * @generated
+ */
+public interface Specialization extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see tdt4250.Tdt4250Package#getSpecialization_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link tdt4250.Specialization#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Programme</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link tdt4250.Programme#getSpecialization <em>Specialization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Programme</em>' container reference.
+	 * @see #setProgramme(Programme)
+	 * @see tdt4250.Tdt4250Package#getSpecialization_Programme()
+	 * @see tdt4250.Programme#getSpecialization
+	 * @model opposite="specialization" transient="false"
+	 * @generated
+	 */
+	Programme getProgramme();
+
+	/**
+	 * Sets the value of the '{@link tdt4250.Specialization#getProgramme <em>Programme</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Programme</em>' container reference.
+	 * @see #getProgramme()
+	 * @generated
+	 */
+	void setProgramme(Programme value);
+
+	/**
+	 * Returns the value of the '<em><b>Selectable In</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Selectable In</em>' reference.
+	 * @see #setSelectableIn(Semester)
+	 * @see tdt4250.Tdt4250Package#getSpecialization_SelectableIn()
+	 * @model
+	 * @generated
+	 */
+	Semester getSelectableIn();
+
+	/**
+	 * Sets the value of the '{@link tdt4250.Specialization#getSelectableIn <em>Selectable In</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Selectable In</em>' reference.
+	 * @see #getSelectableIn()
+	 * @generated
+	 */
+	void setSelectableIn(Semester value);
+
+} // Specialization

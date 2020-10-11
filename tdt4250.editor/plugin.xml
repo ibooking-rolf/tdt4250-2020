@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated tdt4250 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="tdt4250.presentation.Tdt4250ModelWizardID"
+            name="%_UI_Tdt4250ModelWizard_label"
+            class="tdt4250.presentation.Tdt4250ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Tdt4250ModelFile.gif">
+         <description>%_UI_Tdt4250ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated tdt4250 -->
+      <editor
+            id="tdt4250.presentation.Tdt4250EditorID"
+            name="%_UI_Tdt4250Editor_label"
+            icon="icons/full/obj16/Tdt4250ModelFile.gif"
+            extensions="tdt4250"
+            class="tdt4250.presentation.Tdt4250Editor"
+            contributorClass="tdt4250.presentation.Tdt4250ActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

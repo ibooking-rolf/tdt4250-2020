@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tdt4250:University xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tdt4250="http://www.example.org/tdt4250" xsi:schemaLocation="http://www.example.org/tdt4250 tdt4250.ecore" name="NTNU">
+	<programme name="Datateknologi" duration="IntegratedMaster">
+		<specialization name="Datateknologi">
+			<semester season="Fall" semesterNumber="1" mandatoryCourseGroup="//@mandatoryCourseGroup.0"></semester>
+			<semester season="Spring" semesterNumber="2" mandatoryCourseGroup="//@mandatoryCourseGroup.1"></semester>
+			<semester season="Fall" semesterNumber="3" mandatoryCourseGroup="//@mandatoryCourseGroup.2"></semester>
+			<semester season="Spring" semesterNumber="4" mandatoryCourseGroup="//@mandatoryCourseGroup.3"></semester>
+		</specialization>
+		<specialization name="Programvaresystemer">
+			<semester season="Fall" semesterNumber="5" mandatoryCourseGroup="//@mandatoryCourseGroup.0" electiveCourseGroup="//@electiveCourseGroup.0"></semester>
+			<semester season="Spring" semesterNumber="6" mandatoryCourseGroup="//@mandatoryCourseGroup.1"></semester>
+			<semester season="Fall" semesterNumber="7" mandatoryCourseGroup="//@mandatoryCourseGroup.2" electiveCourseGroup="//@electiveCourseGroup.1"></semester>
+			<semester season="Spring" semesterNumber="8" mandatoryCourseGroup="//@mandatoryCourseGroup.3"></semester>
+			<semester season="Fall" semesterNumber="9" mandatoryCourseGroup="//@mandatoryCourseGroup.3" electiveCourseGroup="//@electiveCourseGroup.2"></semester>
+			<semester season="Spring" semesterNumber="10" mandatoryCourseGroup="//@mandatoryCourseGroup.1" electiveCourseGroup="//@electiveCourseGroup.3"></semester>
+		</specialization>
+		<specialization name="Kunstig intelligens">
+			<semester season="Fall" semesterNumber="5" mandatoryCourseGroup="//@mandatoryCourseGroup.0" electiveCourseGroup="//@electiveCourseGroup.0"></semester>
+			<semester season="Spring" semesterNumber="6" mandatoryCourseGroup="//@mandatoryCourseGroup.1"></semester>
+			<semester season="Fall" semesterNumber="7" mandatoryCourseGroup="//@mandatoryCourseGroup.2" electiveCourseGroup="//@electiveCourseGroup.1"></semester>
+			<semester season="Spring" semesterNumber="8" mandatoryCourseGroup="//@mandatoryCourseGroup.3"></semester>
+			<semester season="Fall" semesterNumber="9" mandatoryCourseGroup="//@mandatoryCourseGroup.3" electiveCourseGroup="//@electiveCourseGroup.2"></semester>
+			<semester season="Spring" semesterNumber="10" mandatoryCourseGroup="//@mandatoryCourseGroup.1" electiveCourseGroup="//@electiveCourseGroup.3"></semester>
+		</specialization>
+		<specialization name="Databaser og søk">
+			<semester season="Fall" semesterNumber="5" mandatoryCourseGroup="//@mandatoryCourseGroup.0" electiveCourseGroup="//@electiveCourseGroup.0"></semester>
+			<semester season="Spring" semesterNumber="6" mandatoryCourseGroup="//@mandatoryCourseGroup.1"></semester>
+			<semester season="Fall" semesterNumber="7" mandatoryCourseGroup="//@mandatoryCourseGroup.2" electiveCourseGroup="//@electiveCourseGroup.1"></semester>
+			<semester season="Spring" semesterNumber="8" mandatoryCourseGroup="//@mandatoryCourseGroup.3"></semester>
+			<semester season="Fall" semesterNumber="9" mandatoryCourseGroup="//@mandatoryCourseGroup.3" electiveCourseGroup="//@electiveCourseGroup.2"></semester>
+			<semester season="Spring" semesterNumber="10" mandatoryCourseGroup="//@mandatoryCourseGroup.1" electiveCourseGroup="//@electiveCourseGroup.3"></semester>
+		</specialization>
+		<specialization name="Alogritmer og datastrukturer">
+			<semester season="Fall" semesterNumber="5" mandatoryCourseGroup="//@mandatoryCourseGroup.0" electiveCourseGroup="//@electiveCourseGroup.0"></semester>
+			<semester season="Spring" semesterNumber="6" mandatoryCourseGroup="//@mandatoryCourseGroup.1"></semester>
+			<semester season="Fall" semesterNumber="7" mandatoryCourseGroup="//@mandatoryCourseGroup.2" electiveCourseGroup="//@electiveCourseGroup.1"></semester>
+			<semester season="Spring" semesterNumber="8" mandatoryCourseGroup="//@mandatoryCourseGroup.3"></semester>
+			<semester season="Fall" semesterNumber="9" mandatoryCourseGroup="//@mandatoryCourseGroup.3" electiveCourseGroup="//@electiveCourseGroup.2"></semester>
+			<semester season="Spring" semesterNumber="10" mandatoryCourseGroup="//@mandatoryCourseGroup.1" electiveCourseGroup="//@electiveCourseGroup.3"></semester>
+		</specialization>
+	</programme>
+	<programme name="Kommunikasjonsteknologi" duration="IntegratedMaster">
+		<specialization name="Informasjonssikkerhet">
+			<semester season="Fall" semesterNumber="1" mandatoryCourseGroup="//@mandatoryCourseGroup.0" electiveCourseGroup="//@electiveCourseGroup.0"></semester>
+			<semester season="Spring" semesterNumber="2" mandatoryCourseGroup="//@mandatoryCourseGroup.1"></semester>
+			<semester season="Fall" semesterNumber="3" mandatoryCourseGroup="//@mandatoryCourseGroup.2" electiveCourseGroup="//@electiveCourseGroup.1"></semester>
+			<semester season="Spring" semesterNumber="4" mandatoryCourseGroup="//@mandatoryCourseGroup.3"></semester>
+			<semester season="Fall" semesterNumber="5" mandatoryCourseGroup="//@mandatoryCourseGroup.0" electiveCourseGroup="//@electiveCourseGroup.0"></semester>
+			<semester season="Spring" semesterNumber="6" mandatoryCourseGroup="//@mandatoryCourseGroup.1"></semester>
+			<semester season="Fall" semesterNumber="7" mandatoryCourseGroup="//@mandatoryCourseGroup.2" electiveCourseGroup="//@electiveCourseGroup.1"></semester>
+			<semester season="Spring" semesterNumber="8" mandatoryCourseGroup="//@mandatoryCourseGroup.3"></semester>
+			<semester season="Fall" semesterNumber="9" mandatoryCourseGroup="//@mandatoryCourseGroup.3" electiveCourseGroup="//@electiveCourseGroup.2"></semester>
+			<semester season="Spring" semesterNumber="10" mandatoryCourseGroup="//@mandatoryCourseGroup.1" electiveCourseGroup="//@electiveCourseGroup.3"></semester>
+		</specialization>
+	</programme>
+	<course name="Informasjonsteknologi, grunnkurs" code="TDT4110" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Mattematikk 1" code="TMA4100" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Diskret Matematikk" code="TMA4140" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Exphil" code="EXPH004" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Objektorientert programmering" code="TDT4100" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Programmeringslab for datateknologi" code="TDT4112" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Krets- og digitalteknikk" code="TFE4101" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Matematikk 3" code="TMA4115" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Programmeringsprosjekt, datateknologi" code="TDT4113" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Algoritmer og datastrukturer" code="TDT4120" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Datamaskiner og digitalteknikk" code="TDT4160" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Statistikk" code="TMA4240" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Programvareutvikling" code="TDT4140" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Datamodellering og databasesystemer" code="TDT4145" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Menneske-maskin interaksjon" code="TDT4180" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Kommunikasjon - Tjenester og nett" code="TTM4100" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Introduksjon til kunstig intelligens" code="TDT4136" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Informasjonssystemer" code="TDT4175" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Matematikk 4D" code="TMA4135" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Webutvikling" code="IT2810" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Informasjonsgjenfinning" code="TDT4117" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Kognitive arkitekturer" code="TDT4137" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Operativsystemer" code="TDT4186" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Programvarearkitektur" code="TDT4240" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Fysikk" code="TFY4125" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Teknologiledelse" code="TIØ4252" credits="7.5" level="FoundationCourse" semesterType="Spring"></course>
+	<course name="Kundestyrt prosjekt" code="TDT4290" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Design av grafiske brukergrensesnitt" code="IT3402" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Avansert programvaredesign" code="TDT4250" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<course name="Virksomhets-arkitektur og -innovasjon" code="TDT4252" credits="7.5" level="FoundationCourse" semesterType="Fall"></course>
+	<mandatoryCourseGroup course="//@course.0 //@course.1 //@course.2 //@course.3"></mandatoryCourseGroup>
+	<mandatoryCourseGroup course="//@course.4 //@course.5 //@course.6 //@course.7"></mandatoryCourseGroup>
+	<mandatoryCourseGroup course="//@course.8 //@course.9 //@course.10 //@course.11"></mandatoryCourseGroup>
+	<mandatoryCourseGroup course="//@course.12 //@course.13 //@course.14"></mandatoryCourseGroup>
+	<electiveCourseGroup course="//@course.16 //@course.17 //@course.18 //@course.19"></electiveCourseGroup>
+	<electiveCourseGroup course="//@course.20 //@course.21 //@course.22 //@course.23"></electiveCourseGroup>
+	<electiveCourseGroup course="//@course.24 //@course.25 //@course.26 //@course.27"></electiveCourseGroup>
+	<electiveCourseGroup course="//@course.28 //@course.29 //@course.15"></electiveCourseGroup>
+</tdt4250:University>

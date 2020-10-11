@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/tdt4250/src-gen" creationIcons="false" editDirectory="/tdt4250.edit/src-gen"
+    editorDirectory="/tdt4250.editor/src-gen" modelPluginID="tdt4250" modelName="Tdt4250"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>tdt4250.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Tdt4250" disposableProviderFactory="true" ecorePackage="tdt4250.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.ecore#//CourseLevel">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//CourseLevel/FoundationCourse"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//CourseLevel/IntermediateCourse"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//CourseLevel/ThirdYearCourse"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//CourseLevel/HigherLevelCourse"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.ecore#//SemesterType">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//SemesterType/Fall"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//SemesterType/Spring"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//SemesterType/Both"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.ecore#//ProgrammeLevel">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//ProgrammeLevel/Bachelor"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//ProgrammeLevel/Master"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//ProgrammeLevel/IntegratedMaster"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="tdt4250.ecore#//Credits"/>
+    <genClasses ecoreClass="tdt4250.ecore#//University">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//University/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//University/programme"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//University/course"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//University/MandatoryCourseGroup"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//University/ElectiveCourseGroup"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//Course">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/credits"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/level"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/semesterType"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//MandatoryCourseGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//MandatoryCourseGroup/courses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//MandatoryCourseGroup/programme"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//ElectiveCourseGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//ElectiveCourseGroup/courses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//ElectiveCourseGroup/programme"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//Programme">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Programme/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Programme/duration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Programme/semesters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Programme/specialization"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Programme/mandatoryCourses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Programme/electiveCourseGroup"/>
+      <genOperations ecoreOperation="tdt4250.ecore#//Programme/getCredits"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//Semester">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Semester/season"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.ecore#//Semester/programme"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Semester/courses"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//Specialization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Specialization/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.ecore#//Specialization/programme"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Specialization/selectableIn"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,83 @@
+[comment encoding = UTF-8 /]
+[module generate('platform:/resource/tdt4250/model/tdt4250.ecore', 'http://www.eclipse.org/emf/2002/Ecore')]
+
+
+[template public generateElement(university : University)]
+[comment @main/]
+[file (university.name + '.html', false, 'UTF-8')]
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course overview at [ university.name /]</title>
+
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	[ for (programme : Programme | university.programme)]
+		<h1>[university.name/] - [programme.name /]</h1>
+		[ for (specialization : Specialization | programme.specialization)]
+			<h2>[specialization.name /]</h2>
+
+			[ for (semester : Semester | specialization.semester)]
+				<p>
+					<h3>Semester [semester.semesterNumber/] - [semester.season/]</h3>
+
+					<b>Obligatoriske fag</b>
+					<table>
+						<thead>
+							<tr>
+								<th>Emnekode</th>
+								<th>Navn</th>
+								<th>Studiepoeng</th>
+							</tr>
+						</thead>
+	
+						<tbody>
+							[for (course : Course | semester.mandatoryCourseGroup.course)]
+								<tr>
+									<td>[course.code/]</td>
+									<td>[course.name/]</td>
+									<td>[course.credits/]</td>
+								<tr>
+							[/for]
+						</tbody>
+					</table>
+
+					[if ((semester.electiveCourseGroup->size()) > 0)]
+						<br>
+						<b>Valgfag</b>
+						<table>
+							<thead>
+								<tr>
+									<th>Emnekode</th>
+									<th>Navn</th>
+									<th>Studiepoeng</th>
+								</tr>
+							</thead>
+		
+							<tbody>
+								[for (course : Course | semester.electiveCourseGroup.course)]
+									<tr>
+										<td>[course.code/]</td>
+										<td>[course.name/]</td>
+										<td>[course.credits/]</td>
+									<tr>
+								[/for]
+							</tbody>
+						</table>
+					[/if]
+				</p>
+			[/for]
+			<br>
+			<br>
+		[/for]
+	[/for]
+</body>
+</html>
+[/file]
+[/template]
