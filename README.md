@@ -14,6 +14,11 @@ The `University` class was made to have at most 1 root node, such that all other
 As my understanding of how Eclipse works (workspaces, projects, perspectives, views etc.) I realised I had misunderstood the project structure in the first assignment. Hence the folder and project structure was changed dramatically from assignemnt 1. The old structure, model and rational will still be at the bottom of this readme, but they will be outdated.
 
 
+### Extra information
+
+Please note that some of the course groups are repeated throughout the example instance of the model. This is because adding many courses and course groups is time consuming, which I sadly do not have at the moment. But reusing course groups does not differ the result and one can easily see how the model works.
+
+
 ### Folder structure
 * `tdt4250` - model project
   * `tdt4250/model` - Ecore model and genmodel files
